@@ -9,12 +9,14 @@ const LINKS = {
 
 document.addEventListener('DOMContentLoaded', () => {
   // Entrance reveal (preserve existing behavior)
-  requestAnimationFrame(()=>{
-    document.querySelectorAll('header, .cards, .social-section, .site-footer').forEach(el=>el.classList.add('revealed'))
+  requestAnimationFrame(() => {
+    document.querySelectorAll('header, .cards, .social-section, .site-footer').forEach(el => {
+      el.classList.add('revealed');
+    });
   })
 
   // Handle card clicks via centralized LINKS
-  document.querySelectorAll('.card').forEach(card=>{
+  document.querySelectorAll('.card').forEach(card => {
     const key = card.dataset.link;
     if(!key) return;
     card.addEventListener('click', (e)=>{
