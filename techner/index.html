@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Techner — Build. Code. Scale.</title>
+    <meta name="description" content="Techner — App & Web Development, Full Stack Engineering, Automation." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="page-root">
+      <nav class="nav">
+        <div class="nav-inner">
+          <a class="brand" href="/">TECHNER</a>
+          <div class="nav-actions">
+            <a class="btn ghost" href="#services">Services</a>
+            <a class="btn" href="#contact">Start a Project</a>
+          </div>
+        </div>
+      </nav>
+
+      <header class="hero">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1 class="h-display">Build. Code. Scale.</h1>
+            <p class="h-lead">Custom Web &amp; App Development Powered by Engineering Excellence.</p>
+            <div class="hero-ctas">
+              <a class="btn primary" href="#contact">Start a Project</a>
+              <a class="btn outline" href="#services">View Services</a>
+            </div>
+            <div class="meta">
+              <span class="pill">Full Stack</span>
+              <span class="pill">Automation</span>
+              <span class="pill">Scalable Systems</span>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="founder-frame">
+              <img src="../assets/techner.jpg" alt="Dr. Avishkar Roopi" />
+              <div class="founder-meta">
+                <div class="name">Dr. Avishkar Roopi</div>
+                <div class="role">Founder – Techner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="services" class="section services">
+          <h2 class="section-title">Services</h2>
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="s-icon">{ }</div>
+              <h3>App Development</h3>
+              <p>Native & cross-platform apps focused on performance and maintainability.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="s-icon">&lt;/&gt;</div>
+              <h3>Web Development</h3>
+              <p>Modern web apps — fast, accessible, and scalable interfaces.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="s-icon">API</div>
+              <h3>API & Backend Architecture</h3>
+              <p>Robust backends, microservices, and API-first engineering.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="s-icon">⚙</div>
+              <h3>Automation Systems</h3>
+              <p>Pipelines, orchestration, CI/CD, and process automation for scale.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="s-icon">⚡</div>
+              <h3>Full Stack Engineering</h3>
+              <p>End-to-end product delivery with engineering best practices.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="tech-stack" class="section tech-stack">
+          <h2 class="section-title">Tech Stack</h2>
+          <div class="stack-grid">
+            <div class="stack-item">React</div>
+            <div class="stack-item">Node.js</div>
+            <div class="stack-item">Next.js</div>
+            <div class="stack-item">TypeScript</div>
+            <div class="stack-item">Firebase</div>
+            <div class="stack-item">Postgres</div>
+            <div class="stack-item">Docker</div>
+            <div class="stack-item">Cloud / AWS</div>
+            <div class="stack-item">AI Tools</div>
+          </div>
+        </section>
+
+        <section id="process" class="section process">
+          <h2 class="section-title">Development Process</h2>
+          <ol class="timeline">
+            <li><strong>Idea</strong><span>Clarify goals & constraints</span></li>
+            <li><strong>Design</strong><span>Prototype & UX validation</span></li>
+            <li><strong>Develop</strong><span>Engineering-driven implementation</span></li>
+            <li><strong>Deploy</strong><span>CI/CD, monitoring & scale</span></li>
+          </ol>
+        </section>
+
+        <section id="why" class="section why">
+          <h2 class="section-title">Why Techner</h2>
+          <div class="why-grid">
+            <div class="why-item"><h4>Clean Code</h4><p>Readable, tested, and maintainable software.</p></div>
+            <div class="why-item"><h4>Scalable Architecture</h4><p>Design patterns and infrastructure to grow safely.</p></div>
+            <div class="why-item"><h4>Performance</h4><p>Optimized delivery for real-world usage.</p></div>
+            <div class="why-item"><h4>Developer First</h4><p>Tooling and workflows that respect engineering velocity.</p></div>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact">
+          <div class="contact-inner">
+            <div class="contact-copy">
+              <h2 class="section-title">Start a Project</h2>
+              <p>Ready to build? Tell us about your idea and we'll propose an engineering-first plan.</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <label><span>Name</span><input type="text" name="name" required></label>
+              <label><span>Email</span><input type="email" name="email" required></label>
+              <label><span>Message</span><textarea name="message" rows="4" required></textarea></label>
+              <div class="form-actions">
+                <button class="btn primary" type="submit">Send Request</button>
+                <a class="btn ghost" href="mailto:hello@techner.example">Email Us</a>
+              </div>
+              <p class="form-note">We typically reply within 48 hours.</p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="foot-inner">© Techner — Engineering &amp; Systems</div>
+      </footer>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
