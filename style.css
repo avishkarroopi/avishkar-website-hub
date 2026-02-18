@@ -44,8 +44,8 @@ body{
 @keyframes float{0%,100%{transform:translateY(0px)} 50%{transform:translateY(-12px)}}
 
 /* CARDS */
-.cards{max-width:1280px;margin:48px auto;padding:28px;display:grid;grid-template-columns:1fr;gap:20px}
-.card{display:flex;align-items:center;gap:20px;padding:24px;border-radius:18px;text-decoration:none;color:inherit;background:linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));box-shadow:0 10px 40px rgba(0,0,0,0.4), inset 0 0 0 1px rgba(0,212,255,0.08);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:all .32s cubic-bezier(.2,.95,.2,1);position:relative;overflow:hidden;cursor:pointer}
+.cards{max-width:1280px;margin:48px auto;padding:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{display:flex;flex-direction:column;align-items:center;gap:16px;padding:24px;border-radius:18px;text-decoration:none;color:inherit;background:linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));box-shadow:0 10px 40px rgba(0,0,0,0.4), inset 0 0 0 1px rgba(0,212,255,0.08);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:all .32s cubic-bezier(.2,.95,.2,1);position:relative;overflow:hidden;cursor:pointer}
 .card::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(circle at var(--mouse-x,50%) var(--mouse-y,50%), rgba(0,212,255,0.08), transparent 80%);pointer-events:none;opacity:0;transition:opacity .3s}
 .card:hover::before{opacity:1}
 .card-icon{width:80px;height:80px;flex:0 0 80px;border-radius:14px;background:linear-gradient(135deg, rgba(0,212,255,0.12), rgba(0,212,255,0.03));display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:32px;border:1px solid rgba(0,212,255,0.15);box-shadow:0 8px 24px rgba(0,212,255,0.08)}
