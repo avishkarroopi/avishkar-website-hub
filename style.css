@@ -97,6 +97,7 @@ body{
   font-size: 64px;
   font-weight: 800;
   color: #fff;
+  letter-spacing: 1px;
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 .hero-title .highlight {
@@ -117,7 +118,7 @@ body{
   line-height: 1.8;
 }
 
-/* Redesigned Cards */
+/* Updated Card Styles */
 .card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
@@ -131,9 +132,23 @@ body{
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
 }
 .card-icon {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(212, 179, 91, 0.1));
+  background: linear-gradient(135deg, rgba(255, 138, 48, 0.2), rgba(255, 179, 102, 0.1));
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Updated Social Icons */
+.social-links a {
+  background: linear-gradient(135deg, rgba(255, 138, 48, 0.08), rgba(255, 179, 102, 0.03));
+  border: 1.5px solid rgba(255, 138, 48, 0.15);
+  color: #ff8a30;
+}
+.social-links a:hover {
+  transform: scale(1.15) translateY(-4px);
+  background: linear-gradient(135deg, rgba(255, 138, 48, 0.15), rgba(255, 179, 102, 0.08));
+  border-color: rgba(255, 138, 48, 0.28);
+  box-shadow: 0 8px 24px rgba(255, 138, 48, 0.16), inset 0 0 0 1px rgba(255, 138, 48, 0.1);
+  color: #fff;
 }
 
 /* Redesigned Footer */
