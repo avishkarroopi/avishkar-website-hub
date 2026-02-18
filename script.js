@@ -10,7 +10,7 @@ const LINKS = {
 document.addEventListener('DOMContentLoaded', () => {
   // Entrance reveal (preserve existing behavior)
   requestAnimationFrame(()=>{
-    document.querySelectorAll('header, .cards, .site-footer').forEach(el=>el.classList.add('revealed'))
+    document.querySelectorAll('header, .cards, .social-section, .site-footer').forEach(el=>el.classList.add('revealed'))
   })
 
   // Handle card clicks via centralized LINKS
