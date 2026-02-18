@@ -54,8 +54,8 @@ body{
 .pill{display:inline-block;background:linear-gradient(90deg, rgba(0,224,255,0.08), rgba(6,160,255,0.05));color:var(--muted);padding:8px 14px;border-radius:999px;font-size:13px;font-weight:500;border:1px solid rgba(0,224,255,0.1)}
 
 .hero-visual{display:flex;justify-content:center}
-.founder-frame{width:360px;border-radius:18px;padding:10px;background:linear-gradient(135deg, rgba(0,224,255,0.08), rgba(6,160,255,0.04));box-shadow:0 20px 60px rgba(0,160,255,0.1), inset 0 0 30px rgba(0,224,255,0.05);border:1px solid rgba(0,224,255,0.12);display:flex;flex-direction:column;align-items:center;animation:floatTech 3s ease-in-out infinite}
-.founder-frame img{width:100%;height:240px;object-fit:cover;border-radius:12px;display:block;box-shadow:0 12px 40px rgba(0,160,255,0.15)}
+.founder-frame{width:360px;aspect-ratio: 4 / 5border-radius:18px;padding:10px;overflow: hidden;background:linear-gradient(135deg, rgba(0,224,255,0.08), rgba(6,160,255,0.04));box-shadow:0 20px 60px rgba(0,160,255,0.1), inset 0 0 30px rgba(0,224,255,0.05);border:1px solid rgba(0,224,255,0.12);display:flex;flex-direction:column;align-items:center;animation:floatTech 3s ease-in-out infinite}
+.founder-frame img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block;box-shadow:0 12px 40px rgba(0,160,255,0.15)}
 .founder-meta{margin-top:14px;text-align:center}
 .founder-meta .name{font-weight:700;color:#e9f8ff;font-size:16px}
 .founder-meta .role{font-size:13px;color:var(--muted);margin-top:4px}
